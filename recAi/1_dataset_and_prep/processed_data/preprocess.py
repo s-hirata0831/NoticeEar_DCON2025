@@ -2,6 +2,7 @@ import os
 import librosa
 import numpy as np
 from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import OneHotEncoder
 
 # === 設定 ===
 DATASET_DIR = "/Users/hiratasoma/Documents/NoticeEar_DCON2025/recAi/1_dataset_and_prep/dataset"  # データセットのルートディレクトリ
@@ -20,14 +21,13 @@ def process_audio(file_path):
         # 音声ファイルの読み込み
         audio, sr = librosa.load(file_path, sr=SAMPLE_RATE)
         
-        # 無音部分の除去
-        audio_trimmed, _ = librosa.effects.trim(audio, top_db=20)
+        # 音声データそのまま使用（無音部分の除去は行わない）
         
         # 短い音声データに対して適切なn_fftを設定
-        n_fft = min(2048, 2**int(np.floor(np.log2(len(audio_trimmed)))))
+        n_fft = min(2048, 2**int(np.floor(np.log2(len(audio)))))
         
         # 特徴量抽出（MFCC）
-        mfcc = librosa.feature.mfcc(y=audio_trimmed, sr=sr, n_mfcc=MFCC_FEATURES, n_fft=n_fft)
+        mfcc = librosa.feature.mfcc(y=audio, sr=sr, n_mfcc=MFCC_FEATURES, n_fft=n_fft)
         mfcc = mfcc.T  # 転置してフレーム数 x 特徴量次元の形状に
         
         # 特徴量の正規化
@@ -47,18 +47,24 @@ def process_audio(file_path):
         return None
 
 
+
 def process_dataset(dataset_dir, output_dir):
     """
     データセット内の全ての音声ファイルを処理し、結果を保存する。
     """
     data = []
     labels = []
+    label_map = {}  # カテゴリ名を数値にマッピングする辞書
     
     # カテゴリごとに処理
-    for category in os.listdir(dataset_dir):
+    for idx, category in enumerate(sorted(os.listdir(dataset_dir))):  # ソートして順序を固定
         category_path = os.path.join(dataset_dir, category)
         if os.path.isdir(category_path):
             print(f"Processing category: {category}")
+            
+            # カテゴリを数値ラベルにマッピング
+            if category not in label_map:
+                label_map[category] = idx  # 新しいカテゴリを追加
             
             # foldごとに処理
             for fold in os.listdir(category_path):
@@ -72,11 +78,23 @@ def process_dataset(dataset_dir, output_dir):
                             mfcc_features = process_audio(file_path)
                             if mfcc_features is not None:
                                 data.append(mfcc_features)
-                                labels.append(category)
+                                labels.append(label_map[category])  # 数値ラベルを追加
+                                
+                                # デバッグログを出力
+                                print(f"Added file: {file_path}, Label: {label_map[category]}")
+
+    # 数値ラベルをOne-hotエンコーディングに変換
+    labels_array = np.array(labels).reshape(-1, 1)  # reshape(-1, 1) で2次元に変換
+    encoder = OneHotEncoder(sparse_output=False)    # 修正: sparse=False → sparse_output=False
+    one_hot_labels = encoder.fit_transform(labels_array)  # 数値ラベルをOne-hotに変換
+    
+    # デバッグ: One-hotエンコーディングの結果を出力
+    print(f"Original numeric labels: {labels}")
+    print(f"One-hot encoded labels:\n{one_hot_labels}")
     
     # 保存
     np.save(os.path.join(output_dir, "data.npy"), np.array(data))
-    np.save(os.path.join(output_dir, "labels.npy"), np.array(labels))
+    np.save(os.path.join(output_dir, "labels.npy"), one_hot_labels)  # One-hotラベルを保存
     print(f"Saved processed data and labels to {output_dir}")
 
 def main():

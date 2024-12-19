@@ -9,7 +9,8 @@
 .
 └── recAi
    └── 1_dataset_and_prep
-   └── 2_
+   └── 2_learning
+   └── 3_
 ```
 
 ### 環境
