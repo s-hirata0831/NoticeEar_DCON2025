@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:flutter_sound/flutter_sound.dart'; // flutter_soundのインポート
+import 'package:flutter_sound/flutter_sound.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:flutter_blue_plus/flutter_blue_plus.dart';// flutter_blue_plusのインポート
+import 'package:flutter_blue_plus/flutter_blue_plus.dart';
+import 'start.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -10,7 +11,6 @@ void main() {
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
   FlutterLocalNotificationsPlugin();
 
-  // Android 用通知の初期化
   const initializationSettingsAndroid =
   AndroidInitializationSettings('@mipmap/ic_launcher');
   const initializationSettings =
@@ -18,43 +18,39 @@ void main() {
 
   flutterLocalNotificationsPlugin.initialize(initializationSettings);
 
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const StartScreen(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
   final String title;
+
+  const MyHomePage({super.key, required this.title});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _currentIndex = 0; // 現在のナビゲーションバーのインデックス
-  final List<Map<String, String>> _notificationHistory = []; // 通知履歴リスト
-
+  int _currentIndex = 0;
+  final List<Map<String, String>> _notificationHistory = [];
   final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
   FlutterLocalNotificationsPlugin();
-
-  final FlutterSoundRecorder _recorder = FlutterSoundRecorder(); // flutter_soundのRecorder
-  bool _isRecording = false; // 録音中かどうかのフラグ
+  final FlutterSoundRecorder _recorder = FlutterSoundRecorder();
+  bool _isRecording = false;
+  bool _isScanning = false;
 
   @override
   void initState() {
@@ -62,28 +58,22 @@ class _MyHomePageState extends State<MyHomePage> {
     _initRecorder();
   }
 
-  // Recorderの初期化
+  // 録音の初期化
   Future<void> _initRecorder() async {
-    // マイク権限をリクエスト
     if (await Permission.microphone.request().isGranted) {
-      // 録音の準備
       await _recorder.openRecorder();
     } else {
       throw Exception('マイクの権限がありません');
     }
   }
 
-  // 録音の開始・停止を切り替え
+  // 録音のトグル
   void _toggleRecording() async {
     if (_isRecording) {
-      // 録音停止
       await _recorder.stopRecorder();
     } else {
-      // 録音開始
       await _recorder.startRecorder(toFile: 'audio_example.aac');
     }
-
-    // 状態を更新
     setState(() {
       _isRecording = !_isRecording;
     });
@@ -92,14 +82,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void dispose() {
     super.dispose();
-    _recorder.closeRecorder(); // 録音セッションを閉じる
+    _recorder.closeRecorder();
   }
 
-  // 通知を表示
   void _showNotification() async {
     final currentTime = DateTime.now();
-    final formattedTime =
-        "${currentTime.hour}:${currentTime.minute}:${currentTime.second}";
+    final formattedTime = "${currentTime.hour}:${currentTime.minute}:${currentTime.second}";
 
     setState(() {
       _notificationHistory.add({
@@ -125,11 +113,25 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  // _showSnackbar メソッドをクラス内に追加
   void _showSnackbar(BuildContext context, String message) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(message)),
     );
+  }
+
+  // Bluetoothスキャンの開始/停止
+  void _startScan() {
+    if (!_isScanning) {
+      setState(() {
+        _isScanning = true;
+      });
+      FlutterBluePlus.startScan(timeout: const Duration(seconds: 5));
+    } else {
+      setState(() {
+        _isScanning = false;
+      });
+      FlutterBluePlus.stopScan();
+    }
   }
 
   @override
@@ -141,7 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             GestureDetector(
-              onTap: _toggleRecording, // 録音の開始・停止を切り替え
+              onTap: _toggleRecording,
               child: CircleAvatar(
                 radius: 70.0,
                 backgroundColor: _isRecording ? Colors.red : Colors.green,
@@ -179,78 +181,36 @@ class _MyHomePageState extends State<MyHomePage> {
           },
         ),
       ),
+      Center(
+        child: Text("非表示リスト"),
+      ),
       // 設定画面
-      Center(
-        child: Text("非通知リスト"),
-      ),
-      Center(
-        child: Text("設定画面"),
-      ),
       Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            // BLEスキャン時の処理
-            ElevatedButton(
-              onPressed: () {
-                // BLEスキャンを開始
-                FlutterBluePlus.startScan(timeout: const Duration(seconds: 5));
-              },
-              child: const Text('デバイスをスキャン'),
-            ),
-            Expanded(
-              child: StreamBuilder<List<ScanResult>>(
-                stream: FlutterBluePlus.scanResults,
-                builder: (context, snapshot) {
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    return const Center(child: CircularProgressIndicator());
-                  }
-                  if (snapshot.hasData) {
-                    final devices = snapshot.data!;
-                    return ListView.builder(
-                      itemCount: devices.length,
-                      itemBuilder: (context, index) {
-                        final device = devices[index].device;
-                        return ListTile(
-                          title: Text(device.name.isEmpty ? '未知のデバイス' : device.name),
-                          subtitle: Text(device.id.toString()),
-                          onTap: () async {
-                            await device.connect();
-                            _showSnackbar(context, '${device.name} に接続しました');
-                            final services = await device.discoverServices();
-                            _showSnackbar(context, '${services.length} サービス発見');
-                          },
-                        );
-                      },
-                    );
-                  }
-                  return const Center(child: Text('デバイスが見つかりませんでした'));
-                },
-              ),
-            ),
+          children: const [
+            Icon(Icons.settings, size: 50),
+            SizedBox(height: 20),
+            Text("設定画面", style: TextStyle(fontSize: 24)),
           ],
         ),
       ),
-
     ];
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'EarNotice-Demo-',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 20,
-          ),
-        ),
+        title: Text(widget.title),
         backgroundColor: Colors.deepPurpleAccent,
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications_active, color: Colors.white),
-            onPressed: _showNotification, // 通知を表示するメソッドを呼び出し
+            onPressed: _showNotification,
           ),
-          const Icon(Icons.share, color: Colors.yellow),
         ],
+        titleTextStyle: TextStyle(
+          color: Colors.white,
+          fontSize: 20,
+        ),
       ),
       body: pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -273,15 +233,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.playlist_remove),
-            label: '非通知リスト',
+            label: '非表示リスト',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: '設定',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.bluetooth),
-            label: 'Bluetooth',
+              icon: Icon(Icons.settings),
+              label: '設定'
           ),
         ],
       ),

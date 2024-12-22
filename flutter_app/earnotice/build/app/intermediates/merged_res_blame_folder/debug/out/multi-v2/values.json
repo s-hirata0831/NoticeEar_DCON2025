@@ -23,6 +23,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "1442,1446",
+                        "startColumns": "4,4",
+                        "startOffsets": "90375,90556",
+                        "endLines": "1445,1448",
+                        "endColumns": "12,12",
+                        "endOffsets": "90551,90720"
+                    }
+                },
+                {
                     "source": "C:\\Users\\syake\\.gradle\\caches\\transforms-3\\7b5a837770709484bd30395a2788a4e5\\transformed\\lifecycle-viewmodel-2.7.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -162,25 +181,6 @@
                         "endLines": "2,9,17,25,40,46,52,53,54,55,56,57,291,1990,1995,2963,2978,2994",
                         "endColumns": "58,11,11,11,11,11,11,52,59,51,44,38,59,24,24,24,24,24",
                         "endOffsets": "159,387,606,825,1293,1481,1668,1721,1781,1833,1878,1917,17527,127931,128089,160161,160775,161429"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\syake\\earnotice\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "1442,1446",
-                        "startColumns": "4,4",
-                        "startOffsets": "90375,90556",
-                        "endLines": "1445,1448",
-                        "endColumns": "12,12",
-                        "endOffsets": "90551,90720"
                     }
                 },
                 {

@@ -13,32 +13,32 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\syake\earnotice\android\app\src\debug\AndroidManifest.xml:6:5-66
-15-->C:\Users\syake\earnotice\android\app\src\debug\AndroidManifest.xml:6:22-64
+15-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\debug\AndroidManifest.xml:6:22-64
 16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-16-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:2:5-80
-16-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:2:22-78
+16-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:2:5-80
+16-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:2:22-78
 17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-17-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:3:5-71
-17-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:3:22-68
+17-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:3:5-71
+17-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:3:22-68
 18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-18-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:4:5-81
-18-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:4:22-78
+18-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:4:5-81
+18-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:4:22-78
 19    <uses-permission android:name="android.permission.BLUETOOTH" />
-19-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:5:5-68
-19-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:5:22-65
+19-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:5:5-68
+19-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:5:22-65
 20    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-20-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:6:5-74
-20-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:6:22-71
+20-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:6:5-74
+20-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:6:22-71
 21    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-21-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:7:5-73
-21-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:7:22-70
+21-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:7:5-73
+21-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:7:22-70
 22    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-22-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:8:5-76
-22-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:8:22-73
+22-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:8:5-76
+22-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:8:22-73
 23    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-23-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:9:5-79
-23-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:9:22-76
+23-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:9:5-79
+23-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:9:22-76
 24    <!--
 25 Required to query activities that can process text, see:
 26         https://developer.android.com/training/package-visibility and
@@ -47,16 +47,16 @@
 29         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 30    -->
 31    <queries>
-31-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:51:5-56:15
+31-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:51:5-56:15
 32        <intent>
-32-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:52:9-55:18
+32-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:52:9-55:18
 33            <action android:name="android.intent.action.PROCESS_TEXT" />
-33-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:53:13-72
-33-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:53:21-70
+33-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:53:13-72
+33-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:53:21-70
 34
 35            <data android:mimeType="text/plain" />
-35-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:54:13-50
-35-->C:\Users\syake\earnotice\android\app\src\main\AndroidManifest.xml:54:19-48
+35-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:54:13-50
+35-->C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:54:19-48
 36        </intent>
 37        <intent>
 37-->[androidx.media:media:1.4.1] C:\Users\syake\.gradle\caches\transforms-3\1184d33063b21febf6781252cafde91d\transformed\media-1.4.1\AndroidManifest.xml:25:9-27:18
@@ -67,11 +67,11 @@
 40    </queries>
 41
 42    <uses-permission android:name="android.permission.VIBRATE" />
-42-->[:flutter_local_notifications] C:\Users\syake\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
-42-->[:flutter_local_notifications] C:\Users\syake\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-63
+42-->[:flutter_local_notifications] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
+42-->[:flutter_local_notifications] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-63
 43    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-43-->[:flutter_local_notifications] C:\Users\syake\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-77
-43-->[:flutter_local_notifications] C:\Users\syake\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-74
+43-->[:flutter_local_notifications] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-77
+43-->[:flutter_local_notifications] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-74
 44    <uses-permission android:name="android.permission.WAKE_LOCK" />
 44-->[com.github.canardoux:flutter_sound_core:9.17.8] C:\Users\syake\.gradle\caches\transforms-3\8c9874dc17d3a4ca59e22434777f31c7\transformed\jetified-flutter_sound_core-9.17.8\AndroidManifest.xml:8:5-68
 44-->[com.github.canardoux:flutter_sound_core:9.17.8] C:\Users\syake\.gradle\caches\transforms-3\8c9874dc17d3a4ca59e22434777f31c7\transformed\jetified-flutter_sound_core-9.17.8\AndroidManifest.xml:8:22-65

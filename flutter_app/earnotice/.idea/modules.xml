@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/earnotice.iml" filepath="$PROJECT_DIR$/earnotice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/earnotice_android.iml" filepath="$PROJECT_DIR$/android/earnotice_android.iml" />
     </modules>
   </component>
 </project>

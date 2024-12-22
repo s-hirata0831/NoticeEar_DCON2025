@@ -1,0 +1,1 @@
+ C:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\.dart_tool\\flutter_build\\ee56de23ed5b31386f1bd5e54d5955c6\\native_assets.yaml: 
