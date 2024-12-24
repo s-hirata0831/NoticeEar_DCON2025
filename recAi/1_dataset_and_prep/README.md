@@ -11,10 +11,9 @@
 
 | No. | About          | LabelingName |
 | --- | -------------- | ------------ |
-| 1   | インターフォン | intercom     |
-| 2   | クラクション   | horn         |
-| 3   | 電子レンジの音 | microwave    |
-| 4   | 動物の鳴き声   | animals      |
-| 5   | 銃声           | guns         |
-| 6   | サイレン       | siren        |
-| 7   | 背景音         | back_ground  |
+| 1   | クラクション   | horn         |
+| 2   | 電子レンジの音 | microwave    |
+| 3   | 動物の鳴き声   | animals      |
+| 4   | 銃声           | guns         |
+| 5   | サイレン       | siren        |
+| 6   | 背景音         | back_ground  |

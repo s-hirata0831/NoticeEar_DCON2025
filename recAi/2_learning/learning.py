@@ -2,12 +2,17 @@ import numpy as np
 import tensorflow as tf
 from sklearn.metrics import classification_report, confusion_matrix
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 
 # データのロード
 data_path = "/Users/hiratasoma/Documents/NoticeEar_DCON2025/recAi/1_dataset_and_prep/processed_data/data.npy"
 labels_path = "/Users/hiratasoma/Documents/NoticeEar_DCON2025/recAi/1_dataset_and_prep/processed_data/labels.npy"
 X = np.load(data_path)
 y = np.load(labels_path)
+
+# Xとyの形状を確認
+print(f"X shape: {X.shape}")
+print(f"y shape: {y.shape}")
 
 # データ正規化
 X = X / np.max(X)
@@ -16,17 +21,7 @@ X = X / np.max(X)
 num_classes = len(np.unique(y))
 print("Number of unique classes:", num_classes)
 
-# 2クラス分類に対応するため、y_trainが2クラスの場合はbinary_crossentropyを使う
-if num_classes == 2:
-    # y_trainが0または1の整数である場合、one-hotエンコードは不要
-    y = y.astype(np.float32)
-    y = y.reshape(-1, 1)  # 2Dの形状に変換（[サンプル数, 1]）
-else:
-    # 多クラス分類のためにto_categoricalを使う
-    y = tf.keras.utils.to_categorical(y, num_classes)
-
 # データ分割（学習用、検証用、テスト用）
-from sklearn.model_selection import train_test_split
 X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.2, random_state=42)
 X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.5, random_state=42)
 
@@ -55,23 +50,11 @@ dense = tf.keras.layers.Dense(128, activation='relu')(lstm)
 dropout = tf.keras.layers.Dropout(0.3)(dense)
 
 # 出力層（num_classes に対応）
-if num_classes == 2:
-    # 2クラス分類の場合、sigmoidを使用
-    output_layer = tf.keras.layers.Dense(1, activation='sigmoid')(dropout)
-else:
-    # 多クラス分類の場合、softmaxを使用
-    output_layer = tf.keras.layers.Dense(num_classes, activation='softmax')(dropout)
+output_layer = tf.keras.layers.Dense(3, activation='softmax')(dropout)  # 3クラス分類に変更
 
 # モデルコンパイル
 model = tf.keras.models.Model(inputs=input_layer, outputs=output_layer)
-if num_classes == 2:
-    model.compile(optimizer='adam',
-                  loss='binary_crossentropy',  # 2クラスのバイナリ分類
-                  metrics=['accuracy'])
-else:
-    model.compile(optimizer='adam',
-                  loss='categorical_crossentropy',  # 多クラス分類
-                  metrics=['accuracy'])
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])  # categorical_crossentropyに変更
 
 # 早期終了のコールバック
 early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
@@ -89,14 +72,9 @@ print(f"Test Accuracy: {test_accuracy * 100:.2f}%")
 
 # 混同行列と分類レポート
 y_pred = model.predict(X_test)
-if num_classes == 2:
-    # 2クラスの場合は出力を0または1に変換
-    y_pred = (y_pred > 0.5).astype(int)
-    y_true = y_test.astype(int)  # 二値分類の場合、y_testをintに変換
-else:
-    # 多クラス分類の場合、one-hotエンコードから最大値を取得
-    y_pred = np.argmax(y_pred, axis=1)
-    y_true = np.argmax(y_test, axis=1)
+# 多クラス分類の場合、one-hotエンコードから最大値を取得
+y_pred = np.argmax(y_pred, axis=1)
+y_true = np.argmax(y_test, axis=1)
 
 print("Classification Report:")
 print(classification_report(y_true, y_pred))
@@ -124,4 +102,4 @@ plt.legend()
 plt.show()
 
 # モデル保存（TensorFlow Lite変換準備）
-model.save("cnn_lstm_model.h5")
+model.save("/Users/hiratasoma/Documents/NoticeEar_DCON2025/recAi/2_learning/cnn_lstm_model.h5")
