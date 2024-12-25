@@ -4,9 +4,9 @@ import librosa
 import os
 
 # === 設定 ===
-OUTPUT_MODEL_PATH = "/Users/hiratasoma/Documents/NoticeEar_DCON2025/recAi/2_learning/final_model_v2.h5"  # 保存済みのモデル
-NUM_CLASSES = 6  # 分類クラス数
-LABELS = ["horn", "microwave", "animals(dog)", "guns", "siren", "back_ground"]  # クラスラベルを指定
+OUTPUT_MODEL_PATH = "/Users/hiratasoma/Documents/NoticeEar_DCON2025/recAi/2_learning/final_model.h5"  # 保存済みのモデル
+NUM_CLASSES = 5  # 分類クラス数
+LABELS = ["horn", "microwave", "animals(dog)", "guns", "siren"]  # クラスラベルを指定
 MAX_FRAMES = 160  # 最大フレーム数
 MFCC_FEATURES = 13  # MFCC特徴量の数
 

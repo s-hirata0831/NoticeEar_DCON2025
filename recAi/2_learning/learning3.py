@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 PROCESSED_DATA_DIR = "/Users/hiratasoma/Documents/NoticeEar_DCON2025/recAi/1_dataset_and_prep/processed_data"  # 前処理済みデータのディレクトリ
 EPOCHS = 50  # エポック数
 BATCH_SIZE = 32  # バッチサイズ
-NUM_CLASSES = 6  # 分類数
+NUM_CLASSES = 5  # 分類数
 OUTPUT_MODEL_PATH = "/Users/hiratasoma/Documents/NoticeEar_DCON2025/recAi/2_learning/final_model.h5"  # 出力モデルのパス
 GRAPH_OUTPUT_PATH = "/Users/hiratasoma/Documents/NoticeEar_DCON2025/recAi/2_learning/training_graph.png"  # グラフ出力パス
 
