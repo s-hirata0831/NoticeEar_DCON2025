@@ -6,7 +6,8 @@ CNN（スペクトログラムや MFCC 画像として入力）と LSTM（時系
 
 DNN の構築フレームワークには TensorFlow を用いる。
 
-`train_test_split`を使い、学習用と検証用にデータを分割する（デフォルトの 80%/20%）。
+交差検証(Cross-Validation)によって学習・検証を行う。  
+Cross-Validation については、[こちら](https://qiita.com/ijma34/items/036bcf3c02fb752d549c#3-%E4%BA%A4%E5%B7%AE%E6%A4%9C%E8%A8%BCcross-validation)を参照。
 
 エポック数、バッチサイズを調整可能であり、モデル評価指標も表示可能。
 
