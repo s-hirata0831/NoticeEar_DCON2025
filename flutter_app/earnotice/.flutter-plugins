@@ -2,6 +2,7 @@
 flutter_blue_plus=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_blue_plus-1.34.5\\
 flutter_local_notifications=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_local_notifications-18.0.1\\
 flutter_local_notifications_linux=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_local_notifications_linux-5.0.0\\
+flutter_reactive_ble=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_reactive_ble-5.3.1\\
 flutter_sound=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_sound-9.17.8\\
 flutter_sound_web=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_sound_web-9.17.8\\
 path_provider=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider-2.1.5\\
@@ -14,3 +15,5 @@ permission_handler_android=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\
 permission_handler_apple=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\permission_handler_apple-9.4.5\\
 permission_handler_html=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\permission_handler_html-0.1.3+5\\
 permission_handler_windows=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\permission_handler_windows-0.2.1\\
+reactive_ble_mobile=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\reactive_ble_mobile-5.3.1\\
+tflite_flutter=C:\\Users\\syake\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\tflite_flutter-0.11.0\\

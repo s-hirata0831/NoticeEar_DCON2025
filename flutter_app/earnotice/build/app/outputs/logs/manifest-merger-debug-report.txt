@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:10:5-45:19
+INJECTED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:13:5-48:19
 INJECTED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\debug\AndroidManifest.xml
 MERGED from [com.github.canardoux:flutter_sound_core:9.17.8] C:\Users\syake\.gradle\caches\transforms-3\8c9874dc17d3a4ca59e22434777f31c7\transformed\jetified-flutter_sound_core-9.17.8\AndroidManifest.xml:13:5-14:19
 MERGED from [com.github.canardoux:flutter_sound_core:9.17.8] C:\Users\syake\.gradle\caches\transforms-3\8c9874dc17d3a4ca59e22434777f31c7\transformed\jetified-flutter_sound_core-9.17.8\AndroidManifest.xml:13:5-14:19
@@ -23,8 +23,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sy
 	android:name
 		INJECTED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml
 manifest
-ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:1:1-57:12
-MERGED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:1:1-57:12
+ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:1:1-60:12
+MERGED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:1:1-60:12
 INJECTED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\debug\AndroidManifest.xml:1:1-7:12
@@ -33,6 +33,7 @@ MERGED from [:flutter_local_notifications] C:\Users\syake\GitHub\NoticeEar_DCON2
 MERGED from [:flutter_sound] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\flutter_sound\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider_android] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:permission_handler_android] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\permission_handler_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:reactive_ble_mobile] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\reactive_ble_mobile\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [com.github.canardoux:flutter_sound_core:9.17.8] C:\Users\syake\.gradle\caches\transforms-3\8c9874dc17d3a4ca59e22434777f31c7\transformed\jetified-flutter_sound_core-9.17.8\AndroidManifest.xml:2:1-16:12
 MERGED from [androidx.media:media:1.4.1] C:\Users\syake\.gradle\caches\transforms-3\1184d33063b21febf6781252cafde91d\transformed\media-1.4.1\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\syake\.gradle\caches\transforms-3\37862ef1da3feaf8301f8af84c506535\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -57,6 +58,7 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\sya
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\syake\.gradle\caches\transforms-3\4059a61bdad93a189cb4807e89b6c4ef\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\syake\.gradle\caches\transforms-3\b7628ca872f328f23c9ec7c9909fb8a5\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.13.1] C:\Users\syake\.gradle\caches\transforms-3\889ae3adf7a24645889ee22f4dad2cac\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:2:1-27:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\syake\.gradle\caches\transforms-3\408a642162969e960684d9c16b2f116a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\syake\.gradle\caches\transforms-3\a1fd92b89d0c194f8fe8fdca4d20e2ee\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\syake\.gradle\caches\transforms-3\e896b9ac412a8814559a776dc7b5a420\transformed\jetified-tracing-1.2.0\AndroidManifest.xml:17:1-22:12
@@ -66,6 +68,7 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\syake\.gradle\ca
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\syake\.gradle\caches\transforms-3\3cccf64d8e44a1ff0116ea6b8bd8d8e9\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window.extensions.core:core:1.0.0] C:\Users\syake\.gradle\caches\transforms-3\61fbac9cdc1a22c54aa04ec76334a907\transformed\jetified-core-1.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\syake\.gradle\caches\transforms-3\c4537ab9015740d05f09a422063523a5\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\syake\.gradle\caches\transforms-3\def6a43a416de6d350d9f6c9a422b875\transformed\jetified-rxandroid-2.1.1\AndroidManifest.xml:15:1-20:12
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\syake\.gradle\caches\transforms-3\84b17be5f49a910e04e8c35fea028f28\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:2:1-7:12
 	package
 		INJECTED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\debug\AndroidManifest.xml
@@ -91,40 +94,70 @@ ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\androi
 		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:4:22-78
 uses-permission#android.permission.BLUETOOTH
 ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:5:5-68
+MERGED from [:reactive_ble_mobile] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\reactive_ble_mobile\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-10:38
+MERGED from [:reactive_ble_mobile] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\reactive_ble_mobile\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-10:38
 MERGED from [com.github.canardoux:flutter_sound_core:9.17.8] C:\Users\syake\.gradle\caches\transforms-3\8c9874dc17d3a4ca59e22434777f31c7\transformed\jetified-flutter_sound_core-9.17.8\AndroidManifest.xml:7:5-68
 MERGED from [com.github.canardoux:flutter_sound_core:9.17.8] C:\Users\syake\.gradle\caches\transforms-3\8c9874dc17d3a4ca59e22434777f31c7\transformed\jetified-flutter_sound_core-9.17.8\AndroidManifest.xml:7:5-68
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:10:5-12:38
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:10:5-12:38
+	android:maxSdkVersion
+		ADDED from [:reactive_ble_mobile] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\reactive_ble_mobile\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-35
 	android:name
 		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:5:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:6:5-74
+MERGED from [:reactive_ble_mobile] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\reactive_ble_mobile\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-13:38
+MERGED from [:reactive_ble_mobile] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\reactive_ble_mobile\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-13:38
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:13:5-15:38
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:13:5-15:38
+	android:maxSdkVersion
+		ADDED from [:reactive_ble_mobile] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\reactive_ble_mobile\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-35
 	android:name
 		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:6:22-71
 uses-permission#android.permission.BLUETOOTH_SCAN
 ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:7:5-73
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:22:5-25:31
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:22:5-25:31
+	android:usesPermissionFlags
+		ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:24:9-55
+	tools:targetApi
+		ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:25:9-28
 	android:name
 		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:7:22-70
 uses-permission#android.permission.BLUETOOTH_CONNECT
 ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:8:5-76
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:21:5-76
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:21:5-76
 	android:name
 		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:8:22-73
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:9:22-76
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:10:5-65
+MERGED from [:flutter_local_notifications] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
+MERGED from [:flutter_local_notifications] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:10:22-63
+uses-permission#android.permission.ACCESS_NOTIFICATION_POLICY
+ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:11:5-84
+	android:name
+		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:11:22-82
 queries
-ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:51:5-56:15
+ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:54:5-59:15
 MERGED from [androidx.media:media:1.4.1] C:\Users\syake\.gradle\caches\transforms-3\1184d33063b21febf6781252cafde91d\transformed\media-1.4.1\AndroidManifest.xml:24:5-28:15
 MERGED from [androidx.media:media:1.4.1] C:\Users\syake\.gradle\caches\transforms-3\1184d33063b21febf6781252cafde91d\transformed\media-1.4.1\AndroidManifest.xml:24:5-28:15
 intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
-ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:52:9-55:18
+ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:55:9-58:18
 action#android.intent.action.PROCESS_TEXT
-ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:53:13-72
+ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:56:13-72
 	android:name
-		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:53:21-70
+		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:56:21-70
 data
-ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:54:13-50
+ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:57:13-50
 	android:mimeType
-		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:54:19-48
+		ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\main\AndroidManifest.xml:57:19-48
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\debug\AndroidManifest.xml:6:5-66
 	android:name
@@ -143,6 +176,8 @@ MERGED from [:path_provider_android] C:\Users\syake\GitHub\NoticeEar_DCON2025\fl
 MERGED from [:path_provider_android] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:permission_handler_android] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\permission_handler_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:permission_handler_android] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\permission_handler_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:reactive_ble_mobile] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\reactive_ble_mobile\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:reactive_ble_mobile] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\reactive_ble_mobile\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.github.canardoux:flutter_sound_core:9.17.8] C:\Users\syake\.gradle\caches\transforms-3\8c9874dc17d3a4ca59e22434777f31c7\transformed\jetified-flutter_sound_core-9.17.8\AndroidManifest.xml:5:5-44
 MERGED from [com.github.canardoux:flutter_sound_core:9.17.8] C:\Users\syake\.gradle\caches\transforms-3\8c9874dc17d3a4ca59e22434777f31c7\transformed\jetified-flutter_sound_core-9.17.8\AndroidManifest.xml:5:5-44
 MERGED from [androidx.media:media:1.4.1] C:\Users\syake\.gradle\caches\transforms-3\1184d33063b21febf6781252cafde91d\transformed\media-1.4.1\AndroidManifest.xml:20:5-22:41
@@ -191,6 +226,8 @@ MERGED from [androidx.customview:customview:1.0.0] C:\Users\syake\.gradle\caches
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\syake\.gradle\caches\transforms-3\b7628ca872f328f23c9ec7c9909fb8a5\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.13.1] C:\Users\syake\.gradle\caches\transforms-3\889ae3adf7a24645889ee22f4dad2cac\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.13.1] C:\Users\syake\.gradle\caches\transforms-3\889ae3adf7a24645889ee22f4dad2cac\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\syake\.gradle\caches\transforms-3\408a642162969e960684d9c16b2f116a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\syake\.gradle\caches\transforms-3\408a642162969e960684d9c16b2f116a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\syake\.gradle\caches\transforms-3\a1fd92b89d0c194f8fe8fdca4d20e2ee\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
@@ -209,16 +246,14 @@ MERGED from [androidx.window.extensions.core:core:1.0.0] C:\Users\syake\.gradle\
 MERGED from [androidx.window.extensions.core:core:1.0.0] C:\Users\syake\.gradle\caches\transforms-3\61fbac9cdc1a22c54aa04ec76334a907\transformed\jetified-core-1.0.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\syake\.gradle\caches\transforms-3\c4537ab9015740d05f09a422063523a5\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\syake\.gradle\caches\transforms-3\c4537ab9015740d05f09a422063523a5\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\syake\.gradle\caches\transforms-3\def6a43a416de6d350d9f6c9a422b875\transformed\jetified-rxandroid-2.1.1\AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\syake\.gradle\caches\transforms-3\def6a43a416de6d350d9f6c9a422b875\transformed\jetified-rxandroid-2.1.1\AndroidManifest.xml:18:5-43
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\syake\.gradle\caches\transforms-3\84b17be5f49a910e04e8c35fea028f28\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:5:5-43
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\syake\.gradle\caches\transforms-3\84b17be5f49a910e04e8c35fea028f28\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:5:5-43
 	android:targetSdkVersion
 		INJECTED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\android\app\src\debug\AndroidManifest.xml
-uses-permission#android.permission.VIBRATE
-ADDED from [:flutter_local_notifications] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
-	android:name
-		ADDED from [:flutter_local_notifications] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-63
 uses-permission#android.permission.POST_NOTIFICATIONS
 ADDED from [:flutter_local_notifications] C:\Users\syake\GitHub\NoticeEar_DCON2025\flutter_app\earnotice\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-77
 	android:name
@@ -293,6 +328,14 @@ uses-permission#com.example.earnotice.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] C:\Users\syake\.gradle\caches\transforms-3\889ae3adf7a24645889ee22f4dad2cac\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] C:\Users\syake\.gradle\caches\transforms-3\889ae3adf7a24645889ee22f4dad2cac\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+uses-permission-sdk-23#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:18:5-88
+	android:name
+		ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:18:29-85
+uses-permission-sdk-23#android.permission.ACCESS_FINE_LOCATION
+ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\syake\.gradle\caches\transforms-3\59ead1617e8b7940084ad3f5575a6452\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:19:29-83
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\syake\.gradle\caches\transforms-3\408a642162969e960684d9c16b2f116a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
 	android:value

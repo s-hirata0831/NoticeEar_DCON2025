@@ -1,9 +1,12 @@
-#Sun Dec 22 15:51:47 JST 2024
+#Wed Dec 25 14:56:36 JST 2024
 base.0=C\:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\11\\classes.dex
 base.10=C\:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.11=C\:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 base.12=C\:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+base.13=C\:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\5\\classes.dex
+base.14=C\:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\6\\classes.dex
+base.15=C\:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 base.2=C\:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\12\\classes.dex
 base.3=C\:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\14\\classes.dex
 base.4=C\:\\Users\\syake\\GitHub\\NoticeEar_DCON2025\\flutter_app\\earnotice\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\15\\classes.dex
@@ -17,6 +20,9 @@ path.1=11/classes.dex
 path.10=0/classes.dex
 path.11=1/classes.dex
 path.12=7/classes.dex
+path.13=5/classes.dex
+path.14=6/classes.dex
+path.15=classes2.dex
 path.2=12/classes.dex
 path.3=14/classes.dex
 path.4=15/classes.dex
@@ -30,6 +36,9 @@ renamed.1=classes2.dex
 renamed.10=classes11.dex
 renamed.11=classes12.dex
 renamed.12=classes13.dex
+renamed.13=classes14.dex
+renamed.14=classes15.dex
+renamed.15=classes16.dex
 renamed.2=classes3.dex
 renamed.3=classes4.dex
 renamed.4=classes5.dex

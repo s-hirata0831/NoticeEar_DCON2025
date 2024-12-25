@@ -110,6 +110,12 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "flutter_reactive_ble",
+      "rootUri": "file:///C:/Users/syake/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_reactive_ble-5.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "flutter_sound",
       "rootUri": "file:///C:/Users/syake/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound-9.17.8",
       "packageUri": "lib/",
@@ -138,6 +144,12 @@
       "rootUri": "file:///C:/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "3.2"
+    },
+    {
+      "name": "functional_data",
+      "rootUri": "file:///C:/Users/syake/AppData/Local/Pub/Cache/hosted/pub.dev/functional_data-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "http",
@@ -308,10 +320,34 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "protobuf",
+      "rootUri": "file:///C:/Users/syake/AppData/Local/Pub/Cache/hosted/pub.dev/protobuf-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "provider",
       "rootUri": "file:///C:/Users/syake/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "quiver",
+      "rootUri": "file:///C:/Users/syake/AppData/Local/Pub/Cache/hosted/pub.dev/quiver-3.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "reactive_ble_mobile",
+      "rootUri": "file:///C:/Users/syake/AppData/Local/Pub/Cache/hosted/pub.dev/reactive_ble_mobile-5.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "reactive_ble_platform_interface",
+      "rootUri": "file:///C:/Users/syake/AppData/Local/Pub/Cache/hosted/pub.dev/reactive_ble_platform_interface-5.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "recase",
@@ -374,6 +410,12 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "tflite_flutter",
+      "rootUri": "file:///C:/Users/syake/AppData/Local/Pub/Cache/hosted/pub.dev/tflite_flutter-0.11.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
       "name": "timezone",
       "rootUri": "file:///C:/Users/syake/AppData/Local/Pub/Cache/hosted/pub.dev/timezone-0.10.0",
       "packageUri": "lib/",
@@ -428,7 +470,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-12-22T05:36:15.940620Z",
+  "generated": "2024-12-25T06:59:30.011886Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///C:/flutter",
