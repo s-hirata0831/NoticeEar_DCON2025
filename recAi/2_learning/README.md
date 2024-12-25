@@ -27,4 +27,4 @@ Cross-Validation については、[こちら](https://qiita.com/ijma34/items/03
 
 ### TensorFlow Lite 最適化
 
-現時点では、モデルの軽量化や Flutter 対応に向けた TensorFlow Lite への変換が行われていません。
+現時点では、モデルの軽量化や Flutter 対応に向けた TensorFlow Lite への変換が行われていません。→ 最終推論実装前に実装します。
